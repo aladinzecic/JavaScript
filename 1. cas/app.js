@@ -18,7 +18,7 @@ console.log(typeof "neki string unutar duplih navodnika");
 console.log('neki string unutar duplih navodnika');
 console.log(`neki string unutar duplih navodnika`);
 console.log(`neki string unutar duplih navodnika`);
-
+console.log(typeof "neki string unutar duplih navodnika");
 //2.number- predstavlja broj koji moze biti zapisan sa ili bez decimalnog zareza(tacke)
 // ne pravi se razlika izmedju celih realnih i kompleksnih brojeva
 console.log(234)
