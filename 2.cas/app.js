@@ -42,3 +42,6 @@ ProsekOcena= 4.14 //korektno
 // 4. koriscenjem const keyword (rezervisane reci) 
 // const se najcesce koristi za definisanje konstanti koje nece menjati vrednost
 
+
+// promeljive odnosno varijavle predstavljaju kontejnere za skladistenje vrednosti tjt burke valjda xd.
+
