@@ -51,7 +51,8 @@ console.log(--w)
 w=w+5
 console.log(w)
 //2.3 -=  oduzimanje odredjenu vrednost na postojecu promenljivu
-
+z-=2;
+console.log(z)
 //2.4  *= mnozenje odredjenu vrednost na postojecu promenljivu
 z*=2;
 console.log(z)
@@ -60,6 +61,8 @@ z/=2;
 console.log(z)
 
 //2.6   %= moduo odredjenu vrednost na postojecu promenljivu
+y%=2
+console.log(z)
 
 //2.7 **= stepenovanje odredjene vrednosti na postojecu promenljivu
 
