@@ -92,30 +92,36 @@
 
 
     //prvi zadatak
-    // let x=Number(prompt("unesi visinu:"));
-    // console.log(x);
-    // let y=Number(prompt("unesi sirinu:"));
-    // console.log(y);
-    // if(x==y){
+    let x=Number(prompt("unesi visinu:"));
+    console.log(x);
+    let y=Number(prompt("unesi sirinu:"));
+    console.log(y);
+    if(isNaN(x) || isNaN(y)){
+        console.log("morate uneti broj")
+    }
+    else if(x===y){
         
-    //     console.log("povrsina kvadrata je:");
-    //     console.log(x*y)
-    // }else{
-    //     console.log("povrsina pravougaonika je:");
-    //     console.log(x*y)
-    // }
+        console.log("povrsina kvadrata je:"+x*y);
+    }else{
+        console.log("povrsina pravougaonika je:"+x*y);
+    }
+    //da li je vrednost nekog broja NaN se koristi metoda
+    //isNaN(VREDNOST)
 
 
     //drugi zadatak
-    let x=Number(prompt("unesi x:"));
-    console.log(x);
-    let y=Number(prompt("unesi y:"));
-    console.log(y);
-    if(y!=0){
+    // let x=Number(prompt("unesi x:"));
+    // console.log(x);
+    // let y=+prompt("unesi y:");
+    // console.log(y);
+    // if(y!=0){
         
-        console.log("x/y:");
-        console.log(x/y)
-    }else{
-        console.log("deljenje je nemoguce");
+    //     console.log("x/y:" +x/y);
+    //     
+    // }else{
+    //     console.log("deljenje je nemoguce");
         
-    }
+    // }
+
+
+
