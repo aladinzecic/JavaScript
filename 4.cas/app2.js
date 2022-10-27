@@ -88,3 +88,34 @@
 // Korisnik unosi dva realna broja x i y. Napisati program koji izracunava i stampa
 // kolicnik x/y, ako je broj y razlicit od nule,
 // a inace ispisuje poruku: Deljenje je nemoguce.
+
+
+
+    //prvi zadatak
+    // let x=Number(prompt("unesi visinu:"));
+    // console.log(x);
+    // let y=Number(prompt("unesi sirinu:"));
+    // console.log(y);
+    // if(x==y){
+        
+    //     console.log("povrsina kvadrata je:");
+    //     console.log(x*y)
+    // }else{
+    //     console.log("povrsina pravougaonika je:");
+    //     console.log(x*y)
+    // }
+
+
+    //drugi zadatak
+    let x=Number(prompt("unesi x:"));
+    console.log(x);
+    let y=Number(prompt("unesi y:"));
+    console.log(y);
+    if(y!=0){
+        
+        console.log("x/y:");
+        console.log(x/y)
+    }else{
+        console.log("deljenje je nemoguce");
+        
+    }
