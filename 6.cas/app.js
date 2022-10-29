@@ -35,6 +35,13 @@
 // for(let i=11;i<=20;i+=2){
 //     console.log(x=x+i)
 // }
+    let s=0
+    for(let i=10;i<=20;i++){
+        if(i %2 !==0){
+            s+=i;
+        }
+    }
+    console.log(s)
 
 
 // let x=+prompt("racun:");
