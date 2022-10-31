@@ -79,4 +79,28 @@
 // //switch(new Date().getDay())
 // //na osnovu vrednosti koju nam daje izraz iz switch naredbe kroz casove i eventualno defualt ispisati danas je radni dan 
 // a ako pada vikend ispisi ugodno provedi vikend 
+switch(new Date().getDay()){
+    case 0:
+    console.log("neradni dan")
+    break;
+    case 1:
+    console.log("radni dan")
+    break;
+    case 2:
+    console.log("radni dan")
+    break;
+    case 3:
+    console.log("radni dan")
+    break;
+    case 4:
+    console.log("radni dan")
+    break;
+    case 5:
+    console.log("radni dan")
+    break;
+    case 6:
+    console.log("radni dan")
+    break;
+        
+}
 
