@@ -35,17 +35,43 @@
 // }
 // console.log(novaRecenica)
 
-const recenica ="sledece subote cemo imati test koji predstavlja kraj prvog ciklusa.nakon nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it kampa"
+// const recenica ="sledece subote cemo imati test koji predstavlja kraj prvog ciklusa.nakon nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it kampa"
 
-let novaRecenica=""
-for(let i=0;i<recenica.length;i++){
+// let novaRecenica=""
+// for(let i=0;i<recenica.length;i++){
     
-    if(recenica[i+1] ===" " ||recenica[i+1]==="."){
-        novaRecenica+=recenica[i].toUpperCase()
-    }
-    else if(i===recenica.length-1){
-                novaRecenica+=recenica[i].toUpperCase()
-            }
-    else novaRecenica+=recenica[i]
-}
-console.log(novaRecenica)
+//     if(recenica[i+1] ===" " ||recenica[i+1]==="."){
+//         novaRecenica+=recenica[i].toUpperCase()
+//     }
+//     else if(i===recenica.length-1){
+//                 novaRecenica+=recenica[i].toUpperCase()
+//             }
+//     else novaRecenica+=recenica[i]
+// }
+// console.log(novaRecenica)
+
+
+//prebrojati koliko se puta u unetom stringu mojavljuje slovo m i veliko i malo 
+// let brojac=0
+// let recenica =prompt("unesi neku recenicu")
+// for(let i=0;i<recenica.length;i++){
+//     if(recenica[i]==="m"||recenica[i]==="M"){
+//         brojac++
+//     }
+    
+// }
+// console.log(brojac)
+
+
+//2.prebrojati koliko ima znakova koji su cifre u stringu
+// let brojac=0
+// let recenica =prompt("unesi neku recenicu")
+// for(let i=0;i<recenica.length;i++){
+//     if(recenica[i]==="0"||recenica[i]==="1"||recenica[i]==="2"||recenica[i]==="3"||recenica[i]==="4"||recenica[i]==="5"||
+//     recenica[i]==="6"||recenica[i]==="7"||recenica[i]==="8"||recenica[i]==="9")
+//     {
+//         brojac++    
+//     }    
+// }
+// console.log(brojac)
+
