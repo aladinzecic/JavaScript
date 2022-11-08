@@ -75,3 +75,16 @@
 // }
 // console.log(brojac)
 
+
+let brojac=0
+let recenica =prompt("unesi neku recenicu")
+for(let i=0;i<recenica.length;i++){
+    if(!isNaN(recenica[i])){
+        brojac++
+    }
+}
+console.log(brojac)
+//uzvicnik je metoda da se okrene boolean ako je true bice false
+
+
+
