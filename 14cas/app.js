@@ -38,26 +38,61 @@
 //sastavljen od "ovo je novodobijena recenica, " i poslednjeg izmenjenog isecka 
 //a ako je <=9 funkcija treba vratiti poruku :
 // argument +{duzina}+"nedovoljno za dalje ispitivanje"
-const funkcija=function(recenica){
-    if(recenica.length>9){
-        let polaDuzine
-        // if(recenica.length%2===0){
-        //     polaDuzine=recenica.length/2
-        // }
-        // else if(recenica.length%2!==0)
-        // polaDuzine =Math.ceil(recenica.length/2)
-        polaDuzine=recenica.length%2===0
-        ? recenica.length/2
-        :Math.ceil(recenica.length/2)
-    const isecak=recenica.slice(polaDuzine,recenica.length)
-    const novaRecenica=isecak.replace(/a/g,"B")
-    const konacno="ovo je novodobijena recenica, ".concat(novaRecenica)
-    return konacno 
-    }
-    else {
-        const recenica2=recenica.concat(recenica.length,"nedovoljno za dalje ispitivanje")
-        return recenica2
-    }
-}
-console.log(funkcija("manje od 10aa"))
+// const funkcija=function(recenica){
+//     if(recenica.length>9){
+//         let polaDuzine
+//         // if(recenica.length%2===0){
+//         //     polaDuzine=recenica.length/2
+//         // }
+//         // else if(recenica.length%2!==0)
+//         // polaDuzine =Math.ceil(recenica.length/2)
+//         polaDuzine=recenica.length%2===0
+//         ? recenica.length/2
+//         :Math.ceil(recenica.length/2)
+//     const isecak=recenica.slice(polaDuzine,recenica.length)
+//     const novaRecenica=isecak.replace(/a/g,"B")
+//     const konacno="ovo je novodobijena recenica, ".concat(novaRecenica)
+//     return konacno 
+//     }
+//     else {
+//         const recenica2=recenica.concat(recenica.length,"nedovoljno za dalje ispitivanje")
+//         return recenica2
+//     }
+// }
+// console.log(funkcija("manje od 10aa"))
 
+
+// Domaci zadatak.
+// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca,
+//  datu recenicu u vise oblika (spojenu u jedan string).
+// 1. recenicu ispisanu velikim slovima,
+// 2. recenicu ispisanu malim slovima,
+// 3. pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
+// 4. Ako se u recenici nadje rec 'skola' neka bude zamenjena recju fakultet,
+// 5. Neka bude ispisano prvih 10 karaktera unete recenice,
+// 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
+
+const domaci=()=>{
+    const recenica=prompt("unesi recenicu")
+    const prva=recenica.toUpperCase()
+    const druga=recenica.toLoverCase()
+    let polaDuzine;
+    if(recenica.length%2===0){
+        polaDuzine=recenica.length/2;
+    }
+    else 
+    polaDuzine=Math.round(recenica.length/2);
+
+    const prvapol=recenica.slice(0,polaDuzine).toUpperCase()
+    const drugapol=recenica.substring(polaDuzine,recenica.length).toLowerCase()
+    const treca=prvapol.concat(drugapol);
+
+    const cetvrta=recenica.replace(/skola/ig,"fakultet");
+    const peta=recenica.substr(0,10)
+    const sesta=recenica.slice(-10)
+    return(
+        prva.concat("\n",druga,"\n",treca,"\n",cetvrta,"\n",peta,"\n",sesta)
+    )
+}
+const isecak ="recenica za slice".slice(12)//ovako ide do kraja recenice
+console.log(domaci)
