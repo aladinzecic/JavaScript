@@ -72,27 +72,43 @@
 // 5. Neka bude ispisano prvih 10 karaktera unete recenice,
 // 6. Neka bude ispisano poslednjih 10 karaktera unete recenice.
 
-const domaci=()=>{
-    const recenica=prompt("unesi recenicu")
-    const prva=recenica.toUpperCase()
-    const druga=recenica.toLoverCase()
-    let polaDuzine;
-    if(recenica.length%2===0){
-        polaDuzine=recenica.length/2;
+// const domaci=()=>{
+//     const recenica=prompt("unesi recenicu")
+//     const prva=recenica.toUpperCase()
+//     const druga=recenica.toLoverCase()
+//     let polaDuzine;
+//     if(recenica.length%2===0){
+//         polaDuzine=recenica.length/2;
+//     }
+//     else 
+//     polaDuzine=Math.round(recenica.length/2);
+
+//     const prvapol=recenica.slice(0,polaDuzine).toUpperCase()
+//     const drugapol=recenica.substring(polaDuzine,recenica.length).toLowerCase()
+//     const treca=prvapol.concat(drugapol);
+
+//     const cetvrta=recenica.replace(/skola/ig,"fakultet");
+//     const peta=recenica.substr(0,10)
+//     const sesta=recenica.slice(-10)
+//     return(
+//         prva.concat("\n",druga,"\n",treca,"\n",cetvrta,"\n",peta,"\n",sesta)
+//     )
+// }
+// const isecak ="recenica za slice".slice(12)//ovako ide do kraja recenice
+// console.log(domaci)
+
+const zbir=(par)=>{
+    if(par>=1000&&par<=9999){
+        let suma=0;
+        let cifra;
+        while(par>=1){
+            cifra=par%10;
+            suma+=cifra;
+            par=(par-par%10)/10;
+            
+        }
+        return suma;
     }
-    else 
-    polaDuzine=Math.round(recenica.length/2);
-
-    const prvapol=recenica.slice(0,polaDuzine).toUpperCase()
-    const drugapol=recenica.substring(polaDuzine,recenica.length).toLowerCase()
-    const treca=prvapol.concat(drugapol);
-
-    const cetvrta=recenica.replace(/skola/ig,"fakultet");
-    const peta=recenica.substr(0,10)
-    const sesta=recenica.slice(-10)
-    return(
-        prva.concat("\n",druga,"\n",treca,"\n",cetvrta,"\n",peta,"\n",sesta)
-    )
+    else return "niste uneli cetvrocifre broj"
 }
-const isecak ="recenica za slice".slice(12)//ovako ide do kraja recenice
-console.log(domaci)
+console.log(zbir(6129))
