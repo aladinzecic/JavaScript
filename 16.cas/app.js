@@ -54,12 +54,12 @@ const funkcija1=(flasa,bure)=>{
     if(isNaN(flasa)||isNaN(bure)) return "los unos"
     else if(bure<0||bure>50||flasa<0||flasa>5)
     return "los unos"
-    brojac=Math.floor(bure/flasa)
+    brojac=Math.trunc(bure/flasa)
     return "od flasa od "+flasa+" litara i bureta koje ima "+bure +" litara\nMoze se naprviti "+brojac+" flasa"
     
     
 }
-console.log(funkcija1(4,51))
+console.log(funkcija1(4,50))
 
 
 
