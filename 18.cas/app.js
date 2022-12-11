@@ -119,19 +119,115 @@
 // console.log(rec("ja idem ja idem",2,5))
 
 
-function rec(recenica,slovo){
-    let b=""
-    for(let i=0;i<recenica.length;i++){
-        if(recenica[i]!==slovo){
-            b+=recenica[i]
-        }
+// function rec(recenica,slovo){
+//     let b=""
+//     for(let i=0;i<recenica.length;i++){
+//         if(recenica[i]!==slovo){
+//             b+=recenica[i]
+//         }
         
-    }
-    return b
+//     }
+//     return b
 
     
+// }
+// console.log(rec("ja idem ja idem","a"))
+
+
+
+// Domaci zadatak:
+// Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
+
+// function izdvajanje(recenica,br){
+//     let result=recenica.slice(recenica.length-br)
+//     return result
+// }
+// console.log(izdvajanje("Pera ima devojku",5))
+
+
+// function izdvajanje(recenica){
+//     let nova="";
+//     for(let i=0;i<recenica.length;i++){
+//         if(recenica.length%2!==0&&i===recenica.length-1){
+//             nova+=recenica[i]
+//         }
+//         else if(i%2===0){
+//             nova+=recenica[i+1]
+//         }
+//         else if(i%2!==0){
+//             nova+=recenica[i-1]
+//         }
+        
+        
+//     }
+//     return nova
+// }
+// console.log(izdvajanje("pera ima devojku."))
+
+
+// function izdvajanje(recenica1,recenica2){
+//     let nova="";
+//     if(recenica1.length>recenica2.length){
+//         for(let i=0;i<recenica2.length;i++){
+            
+//             nova+=recenica1[i]
+//             nova+=recenica2[i]
+//         }
+//         for(i=recenica2.length;i<recenica1.length;i++){
+//             nova+=recenica1[i]
+
+//         }
+//     }
+//     else{
+//     for(let i=0;i<recenica1.length;i++){
+        
+//         nova+=recenica1[i]
+//         nova+=recenica2[i]
+//     }
+//     for(i=recenica1.length;i<recenica2.length;i++){
+//         nova+=recenica2[i]
+
+//     }
+//     }
+    
+
+//     return nova
+// }
+// //moze i uslov recenica[i]!== undefined
+// console.log(izdvajanje("pera","sladoled"))
+
+
+
+function izdvajanje(recenica){
+    let i=0
+    let nova="";
+    for(i=0;i<recenica.length;i++){
+        nova+=recenica[i]
+        if(recenica[i+1]==="_"||recenica[i+1]==="." ||recenica[i]!==isNaN){
+            break
+        }
+        
+        
+    }
+    nova+="..."
+    const position=recenica.search("@")
+    for(let i=position;i<recenica.length;i++){
+        nova+=recenica[i]
+    }
+
+    return nova
 }
-console.log(rec("ja idem ja idem","a"))
+console.log(izdvajanje("aladin5zecic@gmail.com"))
+
+
+
+
+
+
+
+
+
+
 
 
 
