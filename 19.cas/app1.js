@@ -44,3 +44,6 @@
 //     return par*2.54
 // }
 // console.log(izdvajanje(4))
+
+
+
