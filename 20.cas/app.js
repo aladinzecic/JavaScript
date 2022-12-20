@@ -103,6 +103,18 @@ console.log(Number([]))//0
 console.log(Number({}))//NaN
 
 
+//domaci
+// funkcija ocekuje cetvorocifren broj a vraca broj kojem su zamenjene prva i treca i druga i cetvrta
+//1234   3412
+let nova=""
+function cetiri(recenica){
+    if(recenica<1000||recenica>=10000) return "los unos"
+    else return recenica%10*100+ Math.floor((recenica/10)%10)*1000+ Math.floor((recenica/100)%10) 
+    +Math.floor(recenica/1000)*10
+}
+console.log(cetiri(1234))
+
+
 
 
 
