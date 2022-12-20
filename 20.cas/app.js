@@ -114,6 +114,29 @@ function cetiri(recenica){
 }
 console.log(cetiri(1234))
 
+//2.parseInt()-analizira argument i vraca nam ceo broj ako je moguce
+//dozvoljeni su ramaci samo sto on hvata prvi broj
+//
+
+console.log(parseInt(   23      ))//23
+console.log(parseInt("23+5"))//23
+console.log(parseInt("23.23 56"))//23.23
+console.log(parseInt("ADS12f 56"))//NaN
+console.log(parseInt(23))
+console.log(parseInt(true))//NaN
+console.log(parseInt(false))//NaN
+console.log(parseInt("23.4"))//23.4
+console.log(parseInt("23,45"))//23
+console.log(parseInt([]))//NaN
+console.log(parseInt({}))//NaN
+
+//2.parseFloat()-analizira argument i vraca nam broj sa decimalnim zapisom ili bez njega ako je moguce
+
+
+
+
+
+
 
 
 
