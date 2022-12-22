@@ -47,3 +47,22 @@ function izdvajanje(par1,par2){
     
 
 console.log(izdvajanje(50,150))
+
+//
+// 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+
+// 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
+
+
+function dva(par1,par2){
+    if((par1>40&&par1<60||par1>70&&par1<100)&&(par2>40&&par2<60||par2>70&&par2<100))return "jesu"
+    else return "nisu"
+}
+console.log(dva(45,45))
+
+function veci(par1,par2){
+    if((par1<40||par1>60)||(par2<40||par2>60))return "los unos"
+    else if(par1>par2) return par1
+    else return par2
+}
+console.log(veci(45,61))
