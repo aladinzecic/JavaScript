@@ -53,3 +53,19 @@ console.log(Math.abs(0));
 
 //Math.cos(radians)-mora od -1 do 1
 console.log(Math.abs(0));
+
+function radijani(par) {
+  return (par * 180) / Math.PI;
+}
+console.log(radijani(Math.PI / 6));
+
+function obim(par) {
+  return 2 * r * Math.PI;
+}
+console.log(radijani(2));
+
+function povrsina(par) {
+  r = r / 2;
+  return r ** 2 * Math.PI;
+}
+console.log(radijani(2));
