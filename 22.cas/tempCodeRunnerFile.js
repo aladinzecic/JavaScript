@@ -1,4 +1,4 @@
-// //JS MATH OBJECTS
+//JS MATH OBJECTS
 
 // //math properties (konstante)
 
@@ -84,31 +84,3 @@
 // //Math.log(x)-osnova e
 // //Math.log2(x)-osonva2
 // //Math.log10(x)-osnova 10
-
-// function rastojanje(x1, y1, x2, y2) {
-//   return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
-// }
-// console.log(rastojanje(1, 0, 2, 0));
-
-// function pobednik(x1, x2, x3, x4) {
-//   if (x1 + x2 > x3 + x4) return "prvi";
-//   else if (x1 + x2 < x3 + x4) return "drugi";
-//   else if (x1 + x2 === x3 + x4 && x1 > x3) return "prvi";
-//   else if (x1 + x2 === x3 + x4 && x1 < x3) return "drugi";
-//   else if (x1 + x2 === x3 + x4 && x1 === x3) return "prvi";
-// }
-// console.log(pobednik(40, 40, 40, 50));
-
-function nzd(x, y) {
-  let broj;
-  let i = 1;
-  for (i = 1; i <= x; i++) {
-    if (x % i == 0 && y % i == 0) broj = i;
-  }
-  return broj;
-}
-console.log(nzd(30, 25));
-
-// nadji nzs
-//npr 2 i 4 je 4
-//npr 4 i 5 je 20;
