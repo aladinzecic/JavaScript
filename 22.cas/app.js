@@ -99,16 +99,24 @@
 // }
 // console.log(pobednik(40, 40, 40, 50));
 
-function nzd(x, y) {
-  let broj;
-  let i = 1;
-  for (i = 1; i <= x; i++) {
-    if (x % i == 0 && y % i == 0) broj = i;
-  }
-  return broj;
-}
-console.log(nzd(30, 25));
+// function nzd(x, y) {
+//   let broj;
+//   let i = 1;
+//   for (i = 1; i <= x; i++) {
+//     if (x % i == 0 && y % i == 0) broj = i;
+//   }
+//   return broj;
+// }
+// console.log(nzd(30, 25));
 
 // nadji nzs
 //npr 2 i 4 je 4
 //npr 4 i 5 je 20;
+function nzs(x, y) {
+  i = 1;
+  while (1) {
+    if (i % x == 0 && i % y == 0) return i;
+    i++;
+  }
+}
+console.log(nzs(5, 1));
