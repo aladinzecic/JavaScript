@@ -107,11 +107,11 @@
 //   }
 //   return broj;
 // }
-// console.log(nzd(30, 25));
+// console.log(nzd(2, 4));
 
 // nadji nzs
-//npr 2 i 4 je 4
-//npr 4 i 5 je 20;
+// npr 2 i 4 je 4
+// npr 4 i 5 je 20;
 function nzs(x, y) {
   i = 1;
   while (1) {
@@ -119,4 +119,4 @@ function nzs(x, y) {
     i++;
   }
 }
-console.log(nzs(5, 1));
+console.log(nzs(3, 7));
