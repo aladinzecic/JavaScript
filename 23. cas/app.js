@@ -39,3 +39,60 @@ function funkcija(par1, par2) {
   return (Date.parse(par1) - Date.parse(par2)) / 86400000;
 }
 console.log(funkcija("2004 sep 15", "99 may 24"));
+
+//metoda za prikazivanje datuma:
+
+const trvr = new Date();
+console.log(trvr);
+
+//1. toString()
+console.log(trvr.toString());
+
+//2.toUTCString
+console.log(trvr.toUTCString());
+
+//3.toDateString
+console.log(trvr.toDateString());
+
+//4.toISOString
+console.log(trvr.toISOString());
+
+//5.toTimeString
+console.log(trvr.toTimeString());
+
+//6.toLocaleTimeString()
+console.log(trvr.toLocaleTimeString());
+
+//GET METODE
+//Koristimo ih za dobijanje informacija iz Date objekta
+
+//getFullYear()
+console.log(trvr.getFullYear());
+//getMonth()
+console.log(trvr.getMonth());
+//getDate()
+console.log(trvr.getDate());
+//getDay()
+console.log(trvr.getDay());
+//getHours()
+//getMinutes()
+//getSeconds()
+//getMiliseconds()
+//getTime()//vraca broj milisekundi na datum
+
+//set metode
+
+//dozvoljavaju menjanje nekih vrednosti kod Date objekta
+
+//setDate()
+trvr.setDate(19);
+console.log(trvr);
+
+//setFulYear()
+trvr.setFullYear(2012);
+console.log(trvr);
+//setHours()
+//setMinutes()
+//setSeconds()
+//setMiliseconds()
+//setTime()
