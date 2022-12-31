@@ -1,46 +1,46 @@
-//date objects
+// //date objects
 
-//datumi krecu od 1.1.1970 i idu u + i -
+// //datumi krecu od 1.1.1970 i idu u + i -
 
-//kreiranje datuma
+// //kreiranje datuma
 
-//vrsi se preko new keyword
+// //vrsi se preko new keyword
 
-//kreiranje datuma mozmeo izvrsiti na 4 nacina
+// //kreiranje datuma mozmeo izvrsiti na 4 nacina
 
-//1. new Date()
+// //1. new Date()
 
-const trenutnoVreme = new Date();
-console.log(trenutnoVreme);
+// const trenutnoVreme = new Date();
+// console.log(trenutnoVreme);
 
-//2. new Date(year,month,day,hour,minutes,second,miliseconds)
-const datum = new Date(2003, 8, 19, 22, 22, 22, 22);
-console.log(datum); //meseci se racunaju od 0 do 11 (uvek nam racuna za jedan vise)
-//ako ovako pravimo datume moramo imati min 2 argumenta a max 7
-//ukoliko ubacimo samo 1 ili 2 cifre u prvi argument to se odnosi na prosli vek 19xx ili 190x
-const datum4 = new Date(86, 0);
-console.log(datum4);
-//ako stavimo samo jedan argument on to gleda kao milisekunde
+// //2. new Date(year,month,day,hour,minutes,second,miliseconds)
+// const datum = new Date(2003, 8, 19, 22, 22, 22, 22);
+// console.log(datum); //meseci se racunaju od 0 do 11 (uvek nam racuna za jedan vise)
+// //ako ovako pravimo datume moramo imati min 2 argumenta a max 7
+// //ukoliko ubacimo samo 1 ili 2 cifre u prvi argument to se odnosi na prosli vek 19xx ili 190x
+// const datum4 = new Date(86, 0);
+// console.log(datum4);
+// //ako stavimo samo jedan argument on to gleda kao milisekunde
 
-//3.slanjem jednog argumenta unutar Date()
-//ovako napravljen datum ja zapravo broj milisekundi dodat na 1.1.1970 i
+// //3.slanjem jednog argumenta unutar Date()
+// //ovako napravljen datum ja zapravo broj milisekundi dodat na 1.1.1970 i
 
-//4.slanjem stringa u Date() kao argument.String ce biti parse-ovan i dobicemo datum na osnovu toga
+// //4.slanjem stringa u Date() kao argument.String ce biti parse-ovan i dobicemo datum na osnovu toga
 
-datum1 = new Date("2017 January 25");
-console.log(datum1);
+// datum1 = new Date("2017 January 25");
+// console.log(datum1);
 
-// Date.now() nam daje trenutno vreme u milisekundama
-//Date.parse() nam daje vreme u milisekundama od nekog datuma
-// Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
-// "1999-05-24" i "2004-09-15"
+// // Date.now() nam daje trenutno vreme u milisekundama
+// //Date.parse() nam daje vreme u milisekundama od nekog datuma
+// // Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
+// // "1999-05-24" i "2004-09-15"
 
-function funkcija(par1, par2) {
-  return (Date.parse(par1) - Date.parse(par2)) / 86400000;
-}
-console.log(funkcija("2004 sep 15", "99 may 24"));
+// function funkcija(par1, par2) {
+//   return (Date.parse(par1) - Date.parse(par2)) / 86400000;
+// }
+// console.log(funkcija("2004 sep 15", "99 may 24"));
 
-//metoda za prikazivanje datuma:
+// //metoda za prikazivanje datuma:
 
 const trvr = new Date();
 console.log(trvr);
@@ -63,36 +63,51 @@ console.log(trvr.toTimeString());
 //6.toLocaleTimeString()
 console.log(trvr.toLocaleTimeString());
 
-//GET METODE
-//Koristimo ih za dobijanje informacija iz Date objekta
+// //GET METODE
+// //Koristimo ih za dobijanje informacija iz Date objekta
 
-//getFullYear()
-console.log(trvr.getFullYear());
-//getMonth()
-console.log(trvr.getMonth());
-//getDate()
-console.log(trvr.getDate());
-//getDay()
-console.log(trvr.getDay());
-//getHours()
-//getMinutes()
-//getSeconds()
-//getMiliseconds()
-//getTime()//vraca broj milisekundi na datum
+// //getFullYear()
+// console.log(trvr.getFullYear());
+// //getMonth()
+// console.log(trvr.getMonth());
+// //getDate()
+// console.log(trvr.getDate());
+// //getDay()
+// console.log(trvr.getDay());
+// //getHours()
+// //getMinutes()
+// //getSeconds()
+// //getMiliseconds()
+// //getTime()//vraca broj milisekundi na datum
 
-//set metode
+// //set metode
 
-//dozvoljavaju menjanje nekih vrednosti kod Date objekta
+// //dozvoljavaju menjanje nekih vrednosti kod Date objekta
 
-//setDate()
-trvr.setDate(19);
-console.log(trvr);
+// //setDate()
+// trvr.setDate(19);
+// console.log(trvr);
 
-//setFulYear()
-trvr.setFullYear(2012);
-console.log(trvr);
-//setHours()
-//setMinutes()
-//setSeconds()
-//setMiliseconds()
-//setTime()
+// //setFulYear()
+// trvr.setFullYear(2012);
+// console.log(trvr);
+// //setHours()
+// //setMinutes()
+// //setSeconds()
+// //setMiliseconds()
+// //setTime()
+
+//1.
+// function funkcija() {
+//   let i;
+//   let vreme = "";
+//   for (i = 2014; i <= 2050; i++) {
+//     datum1 = new Date(`${i} jan 1`);
+//     dan = datum1.getDay();
+//     if (dan === 0) {
+//       vreme += `${i} `;
+//     }
+//   }
+//   return vreme;
+// }
+// console.log(funkcija());
