@@ -70,22 +70,20 @@
 // console.log(br);
 
 const niz1 = [-5, 6, 10, 45, 99, -44];
-for (i = 0; i < niz1.length - 1; i++)
-  for (j = i + 1; j < niz1.length; j++) {
-    if (niz1[i] > niz1[j]) {
-      let pom = niz1[i];
-      niz1[i] = niz1[j];
-      niz1[j] = pom;
-    }
-  }
+niz1.sort(function (a, b) {
+  return a - b;
+});
 console.log(niz1);
+
 niz1.sort(function (a, b) {
   return b - a;
 });
 console.log(niz1);
+
 console.log(niz1[0]);
 console.log(niz1[niz1.length - 1]);
 max = niz1[0];
 for (i = 0; i < niz1.length - 1; i++) if (niz1[i] > max) max = niz1[i];
-
 console.log(max);
+console.log(Math.max.apply(null, niz1));
+console.log(Math.min.apply(null, niz1));
