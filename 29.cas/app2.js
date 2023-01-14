@@ -43,3 +43,28 @@ const niz4 = niz.map((student) => student[0].toUpperCase() + student.slice(1));
 console.log(niz4);
 
 const brojevi = [-5, 4, 3, 10, 14, -5];
+
+// Domaci:
+// 1. Pomocu map() metode napraviti novi niz stringova ciji ce elementi da budu
+// ispisani velikim slovima.
+
+// 2. Napraviti novi niz koji sadrzi kvadrate elemenata postojeceg niza:
+
+// 3. Napraviti novi niz koji sadrzi kvadratne korene elemenata postojeceg niza.
+
+// 4.
+// const brojevi = [-5, 4, 3, 10, 14, -5];
+// Napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1), a pozitivne kvadrirati.
+
+// const niz5 = niz.map((element) => element.toUpperCase());
+// console.log(niz5);
+
+// brojevi.forEach((element) => console.log(element * element));
+
+// brojevi.forEach((element) => console.log(Math.sqrt(element)));
+
+brojevi.forEach((element) => {
+  if (element < 0) element *= -1;
+  else element *= element;
+  console.log(element);
+});
