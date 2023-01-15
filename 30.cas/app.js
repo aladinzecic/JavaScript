@@ -29,10 +29,40 @@
 //   else return element;
 // // });
 // console.log(brojevi2);
-const brojevi5 = [-5, 4, 3, 10, 14, -5];
+const brojevi5 = [-5, 4, 3, 19, 14, -5];
 const brojevi3 = brojevi5.map((element, i, arr) => {
   let as = 0;
   if (element % 2 == 0) return element ** 2;
   else return (arr[i] + arr[i - 1] + arr[i + 1]) / 3;
 });
 console.log(brojevi3);
+
+// Domaci:
+// 1. Pomocu for petlje napraviti novi niz, koji ce sadrzati samo godine vece od 17.
+
+// 2.
+// Prvi deo. Napraviti pomocni niz koji ce sadrzati elemente od oba niza.
+// Drugi deo. Napraviti jos jedan pomocni niz koji ce iz prvog dodatnog niza uzeti parne brojeve.
+// Treci deo. U drugom pomocnom nizu umetnuti na prva dva mesta 10 i 20.
+// Funkcija na kraju treba da vrati dva napravljena pomocna niza.
+const novi = [];
+for (let broj of brojevi5) {
+  if (broj > 17) novi.push(broj);
+}
+console.log(novi);
+
+const DATA1 = [2, 26, 38, 75, 11, 29];
+const DATA2 = ["a", "b", "c", "d", "e"];
+const novi2 = [];
+const novi3 = [];
+function funkcija(niz1, niz2) {
+  novi2 = niz1.concat(niz2);
+  for (let broj of DATA1) {
+    if (broj % 2 == 0) novi3.push(broj);
+  }
+  novi3.splice(0, 0, 20);
+  novi3.splice(0, 0, 10);
+  console.log(novi2);
+  console.log(novi3);
+}
+console.log(funkcija(DATA1, DATA2));
