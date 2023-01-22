@@ -74,20 +74,43 @@
 //poredjan abecedno, s tim sto ce se na prvom mestu dodati broj 10, a na poslednjem broj 100.
 // Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalazi.
 
-function jagoda(string) {
-  let flag = 0;
-  let indeks;
-  let niz = string.split(",");
-  for (let el of niz) {
-    if (el === "jagoda") flag = 1;
+// function jagoda(string) {
+//   let flag = 0;
+//   let indeks;
+//   let niz = string.split(",");
+//   for (let el of niz) {
+//     if (el === "jagoda") flag = 1;
+//   }
+//   if (flag == 0) {
+//     niz.sort();
+//     niz.unshift(10);
+//     niz.push(100);
+//     return niz;
+//   } else {
+//     return niz.indexOf("jagoda");
+//   }
+// }
+// console.log(jagoda("pre,jagod,tri"));
+
+// //flat() metoda se koristi kada unutar niza imamo element
+// //koji je niz i zelimo da sve podelemente izvucemo i da oni predstavljaju elemente glavnog niza
+
+// const niz = [
+//   ["jabuka", "ananas", "kruska", "sliva"],
+//   ["krompir", "luk", "paradajz"],
+//   ["pite", "razna jela"],
+// ];
+// const niz2 = niz.flat();
+// console.log(niz2);
+
+function funkcija(niz) {
+  let novi = "";
+  for (i = 0; i < niz.length; i++) {
+    novi += `row ${i} \n`;
+    for (let j of niz[i]) {
+      novi += `${j}\n`;
+    }
   }
-  if (flag == 0) {
-    niz.sort();
-    niz.unshift(10);
-    niz.push(100);
-    return niz;
-  } else {
-    return niz.indexOf("jagoda");
-  }
+  return novi;
 }
-console.log(jagoda("pre,jagod,tri"));
+console.log(funkcija([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]));
