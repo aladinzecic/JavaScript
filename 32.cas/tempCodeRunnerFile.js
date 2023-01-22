@@ -1,4 +1,4 @@
-// //every() metoda proverava da li su svi elementi zadovoljili uslov
+//every() metoda proverava da li su svi elementi zadovoljili uslov
 // //every() metoda vraca boolean
 
 // //da li su svi u grupi punoletni
@@ -68,26 +68,3 @@
 // }
 
 // console.log(boja());
-
-// Na osnovu stringa koji unosi korisnik napraviti niz, gde cemo ispitati da li se
-//jagoda nalazi unutar tog niza. Ako se jagoda ne nalazi unutar niza, funkcija neka vrati taj niz
-//poredjan abecedno, s tim sto ce se na prvom mestu dodati broj 10, a na poslednjem broj 100.
-// Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalazi.
-
-function jagoda(string) {
-  let flag = 0;
-  let indeks;
-  let niz = string.split(",");
-  for (let el of niz) {
-    if (el === "jagoda") flag = 1;
-  }
-  if (flag == 0) {
-    niz.sort();
-    niz.unshift(10);
-    niz.push(100);
-    return niz;
-  } else {
-    return niz.indexOf("jagoda");
-  }
-}
-console.log(jagoda("pre,jagod,tri"));
