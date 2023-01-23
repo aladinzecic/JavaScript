@@ -41,3 +41,17 @@ const ispisivanje = (n) => {
   }
 };
 ispisivanje(10);
+
+//32. Write a JavaScript function to find an array contains a specific element. Go to the editor
+
+// Test data :
+// arr = [2, 5, 9, 6];
+// console.log(contains(arr, 5));
+// [True]
+function funkcija2(niz, n) {
+  for (i = 0; i < niz.length; i++) {
+    if (niz[i] === n) return "sadrzi";
+  }
+  return "ne sadrzi";
+}
+console.log(funkcija2([1, 2, 3, 5, 6, 7, 8, 12], 18));
