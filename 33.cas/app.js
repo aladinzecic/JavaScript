@@ -55,3 +55,16 @@ function funkcija2(niz, n) {
   return "ne sadrzi";
 }
 console.log(funkcija2([1, 2, 3, 5, 6, 7, 8, 12], 18));
+
+function najduzi(niz) {
+  let max = 0;
+  let maxs;
+  for (let string of niz) {
+    if (string.length > max) {
+      max = string.length;
+      maxs = string;
+    }
+  }
+  return maxs;
+}
+console.log(najduzi(["ja", "loptaaaaaa", "papuca"]));
