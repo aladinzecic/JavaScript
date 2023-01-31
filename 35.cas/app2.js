@@ -136,3 +136,51 @@ console.log(myCar);
 // }
 //     }
 // }
+
+// Domaci zadatak:
+// // Napraviti objekat sa sledecim svojstvima:
+// 1. firstName,
+// 2. lastName,
+// 3. language,
+// 4. setLanguage - metoda za setovanje jezika,
+// 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
+// imena i prva dva slova prezimena)
+
+const objekat = {
+  firstname: "Aladin",
+  lastname: "Zecic",
+  language: [],
+  nickname: "",
+};
+
+objekat.setLanguage = function (jezik) {
+  if (!this.language.includes(jezik)) this.language.push(jezik);
+};
+objekat.setNickname = function (firstname, lastname) {
+  this.nickname += this.firstname.slice(0, 2) + this.lastname.slice(0, 2);
+};
+objekat.setLanguage("Engleski");
+console.log(objekat);
+objekat.setLanguage("Engleski");
+console.log(objekat);
+objekat.setLanguage("Srpski");
+objekat.setNickname();
+console.log(objekat);
+console.log(objekat);
+
+// 2. Zadatak
+const radnik = {
+  firstName: "Dzenan",
+  lastName: "Kosuta",
+  fullname: function () {},
+  adresa: {
+    ulica: "avnoja",
+    broj: "bb",
+    grad: "Novi Pazar",
+  },
+};
+radnik.getAdress = function () {
+  return `${this.firstName} ${this.lastName} zivi u ulici ${this.adresa.ulica} u ${this.adresa.grad}`;
+};
+console.log(radnik);
+console.log(radnik.getAdress());
